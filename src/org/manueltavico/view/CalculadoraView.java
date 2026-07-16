@@ -48,3 +48,18 @@ public class CalculadoraView {
         
         Button btnCinco = new Button("5");
         btnCinco.setPrefSize(50, 50);
+        
+   Button btnSeis = new Button("6");
+        btnSeis.setPrefSize(50, 50);
+        
+        Button btnSiete = new Button("7");
+        btnSiete.setPrefSize(50, 50);
+        
+        Button btnOcho = new Button("8");
+        btnOcho.setPrefSize(50, 50);
+        
+        Button btnNueve = new Button("9");
+        btnNueve.setPrefSize(50, 50);
+        
+        Button btnCero = new Button("0");
+        btnCero.setPrefSize(50, 50);
