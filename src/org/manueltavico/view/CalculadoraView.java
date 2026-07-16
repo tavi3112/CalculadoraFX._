@@ -63,3 +63,30 @@ public class CalculadoraView {
         
         Button btnCero = new Button("0");
         btnCero.setPrefSize(50, 50);
+        
+     Button btnSuma = new Button("+");
+        btnSuma.setPrefSize(50, 50);
+        
+        Button btnResta = new Button("-");
+        btnResta.setPrefSize(50, 50);
+        
+        Button btnMultiplicacion = new Button("x");
+        btnMultiplicacion.setPrefSize(50, 50);
+        
+        Button btnDividir = new Button("÷");
+        btnDividir.setPrefSize(50, 50);
+        
+        Button btnRaiz = new Button("√");
+        btnRaiz.setPrefSize(50,50);
+        
+        Button btnPotencia = new Button("x²");
+        btnRaiz.setPrefSize(50,50);
+
+        Button btnPunto = new Button(".");
+        btnPunto.setPrefSize(50,50);
+        
+        Button btnIgual = new Button("=");
+        btnIgual.setPrefSize(50,50);
+        
+        Button btnClear = new Button("C");
+        btnClear.setPrefSize(50,50);
