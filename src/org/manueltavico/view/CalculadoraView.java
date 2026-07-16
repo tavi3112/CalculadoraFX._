@@ -90,3 +90,33 @@ public class CalculadoraView {
         
         Button btnClear = new Button("C");
         btnClear.setPrefSize(50,50);
+        
+   cuadroBotones.add(btnUno, 0, 4);
+        cuadroBotones.add(btnDos, 1, 4);
+        cuadroBotones.add(btnTres, 2, 4);
+        cuadroBotones.add(btnCuatro, 0, 3);
+        cuadroBotones.add(btnCinco, 1, 3);
+        cuadroBotones.add(btnSeis, 2, 3);
+        cuadroBotones.add(btnSiete, 0, 2);
+        cuadroBotones.add(btnOcho, 1, 2);
+        cuadroBotones.add(btnNueve, 2, 2);
+        cuadroBotones.add(btnCero, 1, 5);
+        cuadroBotones.add(btnSuma, 3, 4);
+        cuadroBotones.add(btnResta, 3, 3);
+        cuadroBotones.add(btnMultiplicacion, 3, 2);
+        cuadroBotones.add(btnPunto, 2, 5);
+        cuadroBotones.add(btnIgual, 3, 5);
+        cuadroBotones.add(btnClear, 0, 5);
+
+        // cuadroBotones.add(btnDividir, 3, 2);
+        // cuadroBotones.add(btnRaiz, 0, 0);
+        view.getChildren().addAll(pantalla, cuadroBotones); 
+
+    }
+
+    public VBox getView() {
+
+        return view; 
+
+    }
+}
