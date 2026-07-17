@@ -20,7 +20,7 @@ import org.manueltavico.view.CalculadoraView;
         //nodos
         Pane raiz = new Pane(calculadora.getView());
         //escena(nodoRaiz, ancho, largo)
-        Scene escena = new Scene(raiz, 266,390);
+        Scene escena = new Scene(raiz, 266,410);
         //cargar escena y mostrar escenario principal
         escenarioPrincipal.setTitle("Calculadora de Javier");
         escenarioPrincipal.setScene(escena);

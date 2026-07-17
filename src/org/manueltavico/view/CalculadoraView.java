@@ -27,7 +27,7 @@ public class CalculadoraView {
         pantalla = new Label ("0");
         pantalla.setFont(Font.font("Consolas", FontWeight.BOLD, 40));
         pantalla.setAlignment(Pos.CENTER_RIGHT);
-        pantalla.setPrefSize(235, 50);
+        pantalla.setPrefSize(250, 60);
         pantalla.setStyle("-fx-background-color: #FFFFFF");
 
         
@@ -72,6 +72,12 @@ public class CalculadoraView {
         cuadroBotones.add(btnPunto, 2, 5);
         cuadroBotones.add(btnIgual, 3, 5);
         cuadroBotones.add(btnClear, 0, 5);
+        cuadroBotones.add(btnDividir, 0, 1);
+        cuadroBotones.add(btnRaiz, 1, 1);
+        cuadroBotones.add(btnPotencia, 2, 1);
+        
+        
+        
  
  
         view.getChildren().addAll(pantalla, cuadroBotones); 
