@@ -132,7 +132,7 @@ public class CalculadoraController {
         return formatearResultado(potencia);
     }
 
-    // Método que quita el ".0" si el número es entero
+  
     private String formatearResultado(double valor) {
         if (valor % 1 == 0) {
             return String.valueOf((int) valor);
