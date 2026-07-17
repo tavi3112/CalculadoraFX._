@@ -95,10 +95,13 @@ public class CalculadoraView {
     public VBox getView() {
         return view; 
     }
-
-    private static class cuatroBotones {
-
-        public cuatroBotones() {
-        }
+    
+    private Button nuevoBoton (String texto){
+        Button btn = new Button(texto);
+        
+        //configurar tamaño
+        // tamaño,estilo,sus funciones
+        return btn;
     }
 }
+   
