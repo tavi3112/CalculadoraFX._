@@ -1,6 +1,4 @@
-
 package org.manueltavico.controller;
-
 
 import javafx.scene.control.Label;
 
@@ -21,7 +19,7 @@ public class CalculadoraController {
             opcion2 = "";
             pantalla.setText("");
         }
-        //si ya se completo uncalculo// reiniciar
+        //si ya se completo un calculo // reiniciar
         if (calculoTerminado && entrada.matches("[0-9]")){
             opcion1 = "";
             operador = "";
@@ -37,7 +35,7 @@ public class CalculadoraController {
             } 
                         
             actualizarPantalla(pantalla);
-        }else if (entrada.equals("+")){
+        }else if (entrada.equals("+") || entrada.equals("-")){ // Acepta tanto suma como resta
             operador = entrada;
             actualizarPantalla(pantalla);
         }else if (entrada.equals("=")){
@@ -46,12 +44,14 @@ public class CalculadoraController {
                 operador = "";
                 opcion2 = "";
                 calculoTerminado = true;
-                
+            }else if(operador.equals("-")){ // Evalúa si es una resta
+                opcion1 = resultadoResta(opcion1, opcion2);
+                operador = "";
+                opcion2 = "";
+                calculoTerminado = true;
             }
             actualizarPantalla(pantalla);
-
         }
-        
     }
    
     private void actualizarPantalla(Label pantalla){
@@ -70,5 +70,14 @@ public class CalculadoraController {
         
         return resultado = String.valueOf(suma);
     }
-    
+
+    // Nuevo método para procesar la resta
+    private String resultadoResta(String numeroUno, String numeroDos){
+        String resultado;
+        int datoUno = Integer.parseInt(opcion1);
+        int datoDos = Integer.parseInt(opcion2);
+        int resta = datoUno - datoDos;
+        
+        return resultado = String.valueOf(resta);
+    }
 }
