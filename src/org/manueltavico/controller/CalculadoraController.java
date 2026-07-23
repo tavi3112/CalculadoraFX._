@@ -133,6 +133,7 @@ public class CalculadoraController {
     }
 
   
+    
     private String formatearResultado(double valor) {
         if (valor % 1 == 0) {
             return String.valueOf((int) valor);

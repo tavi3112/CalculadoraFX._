@@ -22,7 +22,7 @@ import org.manueltavico.view.CalculadoraView;
         //escena(nodoRaiz, ancho, largo)
         Scene escena = new Scene(raiz, 266,410);
         //cargar escena y mostrar escenario principal
-        escenarioPrincipal.setTitle("Calculadora de Javier");
+        escenarioPrincipal.setTitle("Calculadora de tavico");
         escenarioPrincipal.setScene(escena);
         escenarioPrincipal.show();
 
